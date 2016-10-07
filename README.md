@@ -9,16 +9,15 @@ Example:
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="ibm-toolbar.html">
-    <style is="custom-style">
-      ibm-toolbar {
-        
-      }
-    </style>
-    <next-code-block></next-code-block>
+    <div class="grey-background">
+      <next-code-block></next-code-block>
+    </div>
   </template>
 </custom-element-demo>
 ```
 -->
 ```html
-<ibm-toolbar></ibm-toolbar>
+<ibm-toolbar>
+  <span main-title>App name</span>
+</ibm-toolbar>
 ```
