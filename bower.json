@@ -5,7 +5,10 @@
     "The IBM Research Emergent Solutions authors"
   ],
   "keywords": [
-    "web-component"
+    "web-component",
+    "polymer",
+    "toolbar",
+    "layout"
   ],
   "license": "https://ibmresearch.github.io/LICENSE.txt",
   "repository": {
