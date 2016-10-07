@@ -1,0 +1,26 @@
+{
+  "name": "ibm-toolbar",
+  "description": "Horizontal toolbar containing items that can be used for label, navigation, search and actions",
+  "authors": [
+    "The IBM Research Emergent Solutions authors"
+  ],
+  "keywords": [
+    "web-component"
+  ],
+  "license": "https://ibmresearch.github.io/LICENSE.txt",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IBMResearch/ibm-toolbar.git"
+  },
+  "main": "ibm-toolbar.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.6.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "private": true
+}
