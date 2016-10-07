@@ -1,0 +1,46 @@
+<!--
+@license
+Copyright (c) 2016 The IBM Research Emergent Solutions authors. All rights reserved.
+This code may only be used under the MIT style license found at https://ibmresearch.github.io/LICENSE.txt
+The complete set of authors may be found at https://ibmresearch.github.io/AUTHORS.txt
+The complete set of contributors may be found at https://ibmresearch.github.io/CONTRIBUTORS.txt
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
+
+<!--
+`<ibm-toolbar-logo>` is an IBM logo for the `<ibm-toolbar>`.
+
+### Styling
+
+Custom property             | Description | Default
+----------------------------|-------------|-------------------------------------
+`--ibm-toolbar-logo-color`  | Logo color  | #000000
+-->
+
+<dom-module id="ibm-toolbar-logo">
+  <template>
+    <style>
+      :host {
+        @apply(--layout);
+      }
+
+      svg {
+        height: 100%;
+
+        fill: var(--ibm-toolbar-logo-color, #000000);
+      }
+    </style>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="250 51 1000 400" role="img" aria-label="IBM logo">
+      <title>IBM logo</title>
+      <path d="M250 51v27.4h194.6V51H250zM472.2 51v27.4h277.4c0 0-28.3-27.4-65.9-27.4H472.2zM804 51v27.4h167.8l-10-27.4H804zM1092.1 51l-10 27.4h166.3V51H1092.1zM250 104.2v27.4h194.6v-27.4H250zM472.2 104.3v27.3h309.6c0 0-3.6-21.1-9.9-27.3H472.2zM804 104.3v27.3h186.2l-9.2-27.3H804zM1072.2 104.3l-9.2 27.3h185.5v-27.3H1072.2zM305.9 157.4v27.4h84.3v-27.4H305.9zM528.2 157.4v27.4h84.3v-27.4H528.2zM694.5 157.4v27.4h84.3c0 0 5.4-14.5 5.4-27.4H694.5zM860 157.4v27.4h149.5l-10-27.4H860zM1053.9 157.4l-10 27.4h150.2v-27.4H1053.9zM305.9 210.7v27.4h84.3v-27.4H305.9zM528.2 210.7v27.4h215.3c0 0 18-14 23.8-27.4H528.2zM860 210.7v27.4h84.3v-15.2l5.4 15.2H1104l5.7-15.2v15.2h84.3v-27.4h-158.2l-8.4 23.2-8.4-23.2H860zM305.9 263.9v27.4h84.3v-27.4H305.9zM528.2 263.9v27.4h239.1c-5.7-13.3-23.8-27.4-23.8-27.4H528.2zM860 263.9v27.4h84.3v-27.4H860zM959.6 263.9l10.2 27.4h115.8l9.7-27.4H959.6zM1109.8 263.9v27.4h84.3v-27.4H1109.8zM305.9 317.1v27.4h84.3v-27.4H305.9zM528.2 317.1v27.4h84.3v-27.4H528.2zM694.5 317.1v27.4h89.6c0-12.9-5.4-27.4-5.4-27.4H694.5zM860 317.1v27.4h84.3v-27.4H860zM978.7 317.1l9.9 27.4h77.6l10-27.4H978.7zM1109.8 317.1v27.4h84.3v-27.4H1109.8zM251.5 370.4v27.4h194.6v-27.4H251.5zM472.2 370.4v27.4h299.6c6.3-6.3 9.9-27.4 9.9-27.4H472.2zM805.5 370.4v27.4h138.7v-27.4H805.5zM997.9 370.4l10.2 27.4h39.5l9.5-27.4H997.9zM1109.8 370.4v27.4H1250v-27.4H1109.8zM251.5 423.6V451h194.6v-27.4H251.5zM472.2 423.6V451h211.5c37.5 0 65.9-27.3 65.9-27.3H472.2zM805.5 423.6V451h138.7v-27.4H805.5zM1017.1 423.6l9.8 27.3 1.7 0 9.9-27.3H1017.1zM1109.8 423.6V451H1250v-27.4H1109.8z"/>
+    </svg>
+  </template>
+  <script>
+    Polymer({
+      is: 'ibm-toolbar-logo'
+    });
+  </script>
+</dom-module>
