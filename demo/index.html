@@ -19,16 +19,73 @@ The complete set of contributors may be found at https://ibmresearch.github.io/C
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../ibm-toolbar.html">
+    <link rel="import" href="../ibm-toolbar-logo.html">
 
     <style is="custom-style" include="demo-pages-shared-styles">
+      demo-snippet.grey-background {
+        --demo-snippet-demo: {
+          background-color: #f9f9f9;
+        };
+      }
     </style>
   </head>
   <body>
     <div class="vertical-section-container centered">
-      <h3>Basic ibm-toolbar demo</h3>
+      <h3>Toolbar simple</h3>
+      <demo-snippet class="grey-background">
+        <template>
+          <ibm-toolbar>
+            <span main-title>App name</span>
+          </ibm-toolbar>
+        </template>
+      </demo-snippet>
+
+      <h3>Toolbar with IBM logo</h3>
+      <demo-snippet class="grey-background">
+        <template>
+          <ibm-toolbar>
+            <a href="#" title="Go home">
+              <ibm-toolbar-logo></ibm-toolbar-logo>
+            </a>
+            <span main-title spacer>App name</span>
+          </ibm-toolbar>
+        </template>
+      </demo-snippet>
+
+      <h3>Toolbar can be styled using custom properties</h3>
       <demo-snippet>
         <template>
-          <ibm-toolbar></ibm-toolbar>
+          <style is="custom-style">
+            ibm-toolbar.dark {
+              --ibm-toolbar-color: #ffffff;
+              --ibm-toolbar-border-bottom-color: #303030;
+              --ibm-toolbar-background-color: #323232;
+            }
+            ibm-toolbar.dark ibm-toolbar-logo {
+              --ibm-toolbar-logo-color: #ffffff;
+            }
+          </style>
+
+          <ibm-toolbar class="dark">
+            <a href="/" title="Go home">
+              <ibm-toolbar-logo></ibm-toolbar-logo>
+            </a>
+            <span main-title spacer>App name</span>
+          </ibm-toolbar>
+        </template>
+      </demo-snippet>
+
+      <h3>Toolbar double</h3>
+      <demo-snippet class="grey-background">
+        <template>
+          <ibm-toolbar>
+            <a href="/" title="Go home">
+              <ibm-toolbar-logo></ibm-toolbar-logo>
+            </a>
+          </ibm-toolbar>
+          <ibm-toolbar>
+            <span main-title>IBM Research</span>
+          </ibm-toolbar>
         </template>
       </demo-snippet>
     </div>
