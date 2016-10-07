@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/IBMResearch/ibm-toolbar.svg?branch=master)](https://travis-ci.org/IBMResearch/ibm-toolbar)
+
 ## &lt;ibm-toolbar&gt;
 
 `<ibm-toolbar>` is a horizontal toolbar containing items that can be used for label, navigation, search and actions.
