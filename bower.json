@@ -15,7 +15,10 @@
     "type": "git",
     "url": "git://github.com/IBMResearch/ibm-toolbar.git"
   },
-  "main": "ibm-toolbar.html",
+  "main": [
+    "ibm-toolbar.html",
+    "ibm-toolbar-logo.html"
+  ],
   "dependencies": {
     "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.3.0",
     "polymer": "Polymer/polymer#^1.6.0"
