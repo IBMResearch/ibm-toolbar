@@ -1,8 +1,9 @@
-[![Build Status](https://travis-ci.org/IBMResearch/ibm-toolbar.svg?branch=master)](https://travis-ci.org/IBMResearch/ibm-toolbar)
+[![Build status][travis-image]][travis-url]
 
-## &lt;ibm-toolbar&gt;
+## \<ibm-toolbar\>
 
-`<ibm-toolbar>` is a horizontal toolbar containing items that can be used for label, navigation, search and actions.
+A horizontal toolbar containing items that can be used for label, navigation,
+search and actions.
 
 Example:
 <!---
@@ -12,9 +13,7 @@ Example:
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="ibm-toolbar.html">
     <link rel="import" href="ibm-toolbar-logo.html">
-    <div class="grey-background">
-      <next-code-block></next-code-block>
-    </div>
+    <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
@@ -27,3 +26,6 @@ Example:
   <span main-title spacer>App name</span>
 </ibm-toolbar>
 ```
+
+[travis-image]: https://travis-ci.org/IBMResearch/ibm-toolbar.svg?branch=master
+[travis-url]: https://travis-ci.org/IBMResearch/ibm-toolbar
