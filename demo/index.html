@@ -18,10 +18,18 @@ The complete set of contributors may be found at https://ibmresearch.github.io/C
 
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../iron-icons/iron-icons.html">
+    <link rel="import" href="../../paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="../../ibm-tabs/ibm-tabs.html">
+    <link rel="import" href="../../ibm-tabs/ibm-tab.html">
     <link rel="import" href="../ibm-toolbar.html">
     <link rel="import" href="../ibm-toolbar-logo.html">
 
     <style is="custom-style" include="demo-pages-shared-styles">
+      .vertical-section-container {
+        max-width: 900px;
+      }
+
       demo-snippet.grey-background {
         --demo-snippet-demo: {
           background-color: #f9f9f9;
@@ -81,16 +89,49 @@ The complete set of contributors may be found at https://ibmresearch.github.io/C
         </template>
       </demo-snippet>
 
-      <h3>Toolbar double</h3>
+      <h3>Complex toolbar</h3>
       <demo-snippet class="grey-background">
         <template>
           <ibm-toolbar>
-            <a href="/" title="Go home">
-              <ibm-toolbar-logo></ibm-toolbar-logo>
+            <div main-title>
+              <a href="/" title="Go home" selectable-item>
+                <ibm-toolbar-logo></ibm-toolbar-logo>
+              </a>
+            </div>
+            <a href="#/account" tabindex="-1" selectable-item>
+              <paper-icon-button icon="account-circle"></paper-icon-button>
+            </a>
+            <a href="#/menu" tabindex="-1" selectable-item>
+              <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
             </a>
           </ibm-toolbar>
           <ibm-toolbar>
-            <span main-title>IBM Research</span>
+            <div main-title>
+              <a href="#/" selectable-item>IBM Research</a>
+            </div>
+            <ibm-tabs spacer role="navigation">
+              <a href="#/momentum" tabindex="-1">
+                <ibm-tab>Momentum</ibm-tab>
+              </a>
+              <a href="#/publications" tabindex="-1">
+                <ibm-tab>Publications</ibm-tab>
+              </a>
+              <a href="#/researchers" tabindex="-1">
+                <ibm-tab>Researchers</ibm-tab>
+              </a>
+              <a href="#/history" tabindex="-1">
+                <ibm-tab>History</ibm-tab>
+              </a>
+              <a href="#/labs" tabindex="-1">
+                <ibm-tab>Labs</ibm-tab>
+              </a>
+              <a href="#/careers" tabindex="-1">
+                <ibm-tab>Careers</ibm-tab>
+              </a>
+              <a href="#/community" tabindex="-1">
+                <ibm-tab>Community</ibm-tab>
+              </a>
+            </ibm-tabs>
           </ibm-toolbar>
         </template>
       </demo-snippet>
