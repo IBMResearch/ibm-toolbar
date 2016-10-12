@@ -28,20 +28,22 @@ element to the top or bottom of the toolbar respectively.
 
 ### Content attributes
 
-Attribute      | Description
----------------|----------------------------------------------------------------
-`main-title`   | The main title element.
-`spacer`       | Adds a left margin of `20px`.
-`bottom-item`  | Sticks the element to the bottom of the toolbar.
-`top-item`     | Sticks the element to the top of the toolbar.
+Attribute          | Description
+-------------------|------------------------------------------------------------
+`main-title`       | The main title element.
+`spacer`           | Adds a left margin of `20px`.
+`selectable-item`  | Style the element as a selectable.
+`bottom-item`      | Sticks the element to the bottom of the toolbar.
+`top-item`         | Sticks the element to the top of the toolbar.
 
 ### Styling
 
-Custom property                      | Description                  | Default
--------------------------------------|------------------------------|-----------
-`--ibm-toolbar-background-color`     | Toolbar background color     | `#ffffff`
-`--ibm-toolbar-border-bottom-color`  | Toolbar border bottom color  | `#e5e5e5`
-`--ibm-toolbar-color`                | Toolbar font color           | `#323232`
+Custom property                                | Description                    | Default
+-----------------------------------------------|--------------------------------|-----------
+`--ibm-toolbar-background-color`               | Toolbar background color       | `#ffffff`
+`--ibm-toolbar-border-bottom-color`            | Toolbar border bottom color    | `#e5e5e5`
+`--ibm-toolbar-color`                          | Toolbar font color             | `#323232`
+`--ibm-toolbar-selectable-item-focused-color`  | Selectable item focused color  | `#3b6caa`
 
 @demo demo/index.html
 -->
@@ -75,6 +77,8 @@ Custom property                      | Description                  | Default
       ::content > [main-title] {
         @apply(--layout-flex);
 
+        white-space: nowrap;
+
         font-weight: bold;
       }
 
@@ -98,6 +102,60 @@ Custom property                      | Description                  | Default
 
       ::content ibm-toolbar-logo {
         height: 24px;
+      }
+
+      ::content [selectable-item] {
+        @apply(--layout-inline);
+        @apply(--layout-center);
+
+        position: relative;
+
+        overflow: hidden;
+
+        height: 50px;
+
+        cursor: pointer;
+        white-space: nowrap;
+        text-decoration: none;
+
+        color: inherit;
+
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      ::content [selectable-item]:focus {
+        color: var(--ibm-toolbar-selectable-item-focused-color, #3b6caa);
+        outline: none;
+      }
+
+      ::content [selectable-item]:hover {
+        color: var(--ibm-toolbar-selectable-item-focused-color, #3b6caa);
+      }
+
+      ::content [selectable-item]::after {
+        position: absolute;
+        bottom: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 4px;
+
+        content: '';
+        transition: -webkit-transform .4s cubic-bezier(0.4, 1, 0.4, 1);
+        transition: transform .4s cubic-bezier(0.4, 1, 0.4, 1);
+        -webkit-transform: translate3d(0, 4px, 0);
+        transform: translate3d(0, 4px, 0);
+
+        background: var(--ibm-toolbar-selectable-item-focused-color, #3b6caa);
+      }
+
+      ::content [selectable-item]:focus::after {
+        transform: translate3d(0, 0, 0);
+      }
+
+      ::content [selectable-item]:hover::after {
+        transform: translate3d(0, 0, 0);
       }
     </style>
 
