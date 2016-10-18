@@ -20,10 +20,7 @@ Example:
 -->
 ```html
 <ibm-toolbar>
-  <a href="#" title="Go home">
-    <ibm-toolbar-logo></ibm-toolbar-logo>
-  </a>
-  <span main-title spacer>App name</span>
+  <span main-title>App name</span>
 </ibm-toolbar>
 ```
 
