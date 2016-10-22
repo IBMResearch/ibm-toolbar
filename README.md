@@ -13,6 +13,11 @@ Example:
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="ibm-toolbar.html">
     <link rel="import" href="ibm-toolbar-logo.html">
+    <style>
+      body {
+        background-color: #f9f9f9;
+      }
+    </style>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
