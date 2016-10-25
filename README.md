@@ -1,4 +1,5 @@
 [![Build status][travis-image]][travis-url]
+[![Published on webcomponents.org][webcomponents-image]][webcomponents-url]
 
 ## \<ibm-toolbar\>
 
@@ -31,3 +32,5 @@ Example:
 
 [travis-image]: https://travis-ci.org/IBMResearch/ibm-toolbar.svg?branch=master
 [travis-url]: https://travis-ci.org/IBMResearch/ibm-toolbar
+[webcomponents-image]: https://img.shields.io/badge/webcomponents.org-published-blue.svg
+[webcomponents-url]: https://beta.webcomponents.org/element/IBMResearch/ibm-toolbar
