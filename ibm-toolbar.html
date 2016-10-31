@@ -38,12 +38,12 @@ Attribute          | Description
 
 ### Styling
 
-Custom property                                | Description                    | Default
------------------------------------------------|--------------------------------|-----------
-`--ibm-toolbar-background-color`               | Toolbar background color       | `#ffffff`
-`--ibm-toolbar-border-bottom-color`            | Toolbar border bottom color    | `#e5e5e5`
-`--ibm-toolbar-color`                          | Toolbar font color             | `#323232`
-`--ibm-toolbar-selectable-item-focused-color`  | Selectable item focused color  | `#3b6caa`
+Custom property                                | Description                     | Default
+-----------------------------------------------|---------------------------------|------------
+`--ibm-toolbar-background-color`               | Toolbar background color        | `#ffffff`
+`--ibm-toolbar-border-bottom-color`            | Toolbar border bottom color     | `#e5e5e5`
+`--ibm-toolbar-color`                          | Toolbar font color              | `#323232`
+`--ibm-toolbar-selectable-item-color-focused`  | Selectable item color on focus  | `#3b6caa`
 
 @demo demo/index.html
 -->
@@ -127,12 +127,12 @@ Custom property                                | Description                    
       }
 
       ::content [selectable-item]:focus {
-        color: var(--ibm-toolbar-selectable-item-focused-color, #3b6caa);
+        color: var(--ibm-toolbar-selectable-item-color-focused, #3b6caa);
         outline: none;
       }
 
       ::content [selectable-item]:hover {
-        color: var(--ibm-toolbar-selectable-item-focused-color, #3b6caa);
+        color: var(--ibm-toolbar-selectable-item-color-focused, #3b6caa);
       }
 
       ::content [selectable-item]::after {
@@ -150,7 +150,7 @@ Custom property                                | Description                    
         -webkit-transform: translate3d(0, 4px, 0);
         transform: translate3d(0, 4px, 0);
 
-        background: var(--ibm-toolbar-selectable-item-focused-color, #3b6caa);
+        background: var(--ibm-toolbar-selectable-item-color-focused, #3b6caa);
       }
 
       ::content [selectable-item]:focus::after {
