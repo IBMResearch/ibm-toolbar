@@ -19,7 +19,6 @@ install:
   - npm install -g eslint eslint-plugin-html eslint-config-ibmresearch
   - bower install
 before_script:
-  - echo '{"extends":"ibmresearch/ibm-element"}' > .eslintrc.json
   - eslint *.html {test,demo}/*.html
 script:
   - xvfb-run wct
