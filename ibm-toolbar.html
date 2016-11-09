@@ -136,7 +136,7 @@ Custom property                                | Description                    
         color: var(--ibm-toolbar-selectable-item-color-focused, #3b6caa);
       }
 
-      ::content [selectable-item]::after {
+      ::content [selectable-item]::before {
         position: absolute;
         bottom: 0;
 
@@ -154,11 +154,11 @@ Custom property                                | Description                    
         background: var(--ibm-toolbar-selectable-item-color-focused, #3b6caa);
       }
 
-      ::content [selectable-item]:focus::after {
+      ::content [selectable-item]:focus::before {
         transform: translate3d(0, 0, 0);
       }
 
-      ::content [selectable-item]:hover::after {
+      ::content [selectable-item]:hover::before {
         transform: translate3d(0, 0, 0);
       }
     </style>
