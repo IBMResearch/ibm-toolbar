@@ -1,3 +1,10 @@
 {
-  "extends": "ibmresearch/polymer-element-test"
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "assert": false,
+    "fixture": false,
+    "WCT": false
+  }
 }

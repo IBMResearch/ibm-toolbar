@@ -19,6 +19,6 @@ install:
   - npm install -g eslint eslint-plugin-html eslint-config-ibmresearch
   - bower install
 before_script:
-  - eslint *.html {test,demo}/*.html
+  - eslint . --ext js,html
 script:
   - xvfb-run wct

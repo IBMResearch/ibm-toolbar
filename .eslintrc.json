@@ -1,3 +1,6 @@
 {
-  "extends": "ibmresearch/polymer-element"
+  "extends": "ibmresearch/html",
+  "globals": {
+    "Polymer": false
+  }
 }
