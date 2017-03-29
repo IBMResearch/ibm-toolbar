@@ -52,8 +52,8 @@ Custom property                                | Description                    
   <template>
     <style>
       :host {
-        @apply(--layout-horizontal);
-        @apply(--layout-center);
+        @apply --layout-horizontal;
+        @apply --layout-center;
 
         position: relative;
 
@@ -75,8 +75,8 @@ Custom property                                | Description                    
       }
 
       ::content > [main-title] {
-        @apply(--layout-inline);
-        @apply(--layout-flex);
+        @apply --layout-inline;
+        @apply --layout-flex;
 
         white-space: nowrap;
 
@@ -106,8 +106,8 @@ Custom property                                | Description                    
       }
 
       ::content [selectable-item] {
-        @apply(--layout-inline);
-        @apply(--layout-center);
+        @apply --layout-inline;
+        @apply --layout-center;
 
         position: relative;
 
