@@ -2,7 +2,7 @@
   "name": "ibm-toolbar",
   "description": "Horizontal toolbar containing items that can be used for label, navigation, search and actions",
   "authors": [
-    "The IBM Research Emergent Solutions authors"
+    "The IBM Research authors"
   ],
   "keywords": [
     "web-component",
