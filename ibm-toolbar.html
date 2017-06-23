@@ -70,11 +70,11 @@ Custom property                                | Description                    
         font-size: 16px;
       }
 
-      ::content > * {
+      :host ::slotted(*) {
         pointer-events: auto;
       }
 
-      ::content > [main-title] {
+      :host ::slotted([main-title]) {
         @apply --layout-inline;
         @apply --layout-flex;
 
@@ -83,29 +83,29 @@ Custom property                                | Description                    
         font-weight: bold;
       }
 
-      ::content > [spacer] {
+      :host ::slotted([spacer]) {
         margin-left: 20px;
       }
 
-      ::content > [bottom-item] {
+      :host ::slotted([bottom-item]) {
         position: absolute;
         right: 0;
         bottom: 0;
         left: 0;
       }
 
-      ::content > [top-item] {
+      :host ::slotted([top-item]) {
         position: absolute;
         top: 0;
         right: 0;
         left: 0;
       }
 
-      ::content ibm-toolbar-logo {
+      :host ::slotted(ibm-toolbar-logo) {
         height: 24px;
       }
 
-      ::content [selectable-item] {
+      :host ::slotted([selectable-item]) {
         @apply --layout-inline;
         @apply --layout-center;
 
@@ -127,16 +127,16 @@ Custom property                                | Description                    
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
 
-      ::content [selectable-item]:focus {
+      :host ::slotted([selectable-item]:focus) {
         color: var(--ibm-toolbar-selectable-item-color-focused, #3b6caa);
         outline: none;
       }
 
-      ::content [selectable-item]:hover {
+      :host ::slotted([selectable-item]:hover) {
         color: var(--ibm-toolbar-selectable-item-color-focused, #3b6caa);
       }
 
-      ::content [selectable-item]::before {
+      :host ::slotted([selectable-item]::before) {
         position: absolute;
         bottom: 0;
 
@@ -154,16 +154,16 @@ Custom property                                | Description                    
         background: var(--ibm-toolbar-selectable-item-color-focused, #3b6caa);
       }
 
-      ::content [selectable-item]:focus::before {
+      :host ::slotted([selectable-item]:focus::before) {
         transform: translate3d(0, 0, 0);
       }
 
-      ::content [selectable-item]:hover::before {
+      :host ::slotted([selectable-item]:hover::before) {
         transform: translate3d(0, 0, 0);
       }
     </style>
 
-    <content></content>
+    <slot></slot>
   </template>
   <script>
     Polymer({

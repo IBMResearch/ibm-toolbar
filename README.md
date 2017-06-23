@@ -1,5 +1,5 @@
-[![Build status][travis-image]][travis-url]
-[![Published on webcomponents.org][webcomponents-image]][webcomponents-url]
+[![Build status](https://travis-ci.org/IBMResearch/ibm-toolbar.svg?branch=master)](https://travis-ci.org/IBMResearch/ibm-toolbar)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/IBMResearch/ibm-toolbar)
 
 ## \<ibm-toolbar\>
 
@@ -29,8 +29,3 @@ Example:
   <span main-title>App name</span>
 </ibm-toolbar>
 ```
-
-[travis-image]: https://travis-ci.org/IBMResearch/ibm-toolbar.svg?branch=master
-[travis-url]: https://travis-ci.org/IBMResearch/ibm-toolbar
-[webcomponents-image]: https://img.shields.io/badge/webcomponents.org-published-blue.svg
-[webcomponents-url]: https://beta.webcomponents.org/element/IBMResearch/ibm-toolbar

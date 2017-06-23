@@ -1,24 +1,25 @@
-sudo: required
-dist: trusty
 language: node_js
-node_js:
-  - '6'
+dist: trusty
+sudo: required
+node_js: stable
+cache:
+  directories:
+    - node_modules
 addons:
-  firefox: '46.0'
+  firefox: latest
   apt:
     sources:
-    - google-chrome
+      - google-chrome
     packages:
-    - google-chrome-stable
+      - google-chrome-stable
 cache:
   directories:
     - node_modules
 install:
-  - npm install -g web-component-tester
-  - npm install -g bower
+  - npm install -g polymer-cli
   - npm install -g eslint eslint-plugin-html eslint-config-ibmresearch
-  - bower install
+  - polymer install --variants
 before_script:
-  - eslint . --ext js,html
+  - eslint . --ext js,html --ignore-path .gitignore
 script:
-  - xvfb-run wct
+  - xvfb-run polymer test
